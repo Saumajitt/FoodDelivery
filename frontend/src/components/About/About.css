@@ -1,0 +1,20 @@
+/* About.css */
+
+.about-page {
+    background-color: rgb(19, 135, 135); 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-page h1 {
+    color:white; /* Dark text color */
+  }
+  
+  .about-page p {
+    color: white;
+    background-color:  rgb(19, 135, 135); /* Slightly darker text color */
+  }
+  

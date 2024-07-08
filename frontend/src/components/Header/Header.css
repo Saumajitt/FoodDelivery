@@ -1,0 +1,139 @@
+.header {
+    height: 34vw;
+    margin: 0;
+    padding: 0;
+    background: url('./header_img.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    /* Ensure it spans the entire viewport width */
+}
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* Align items to the right */
+    text-align: right;
+    /* Align text to the right */
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    right: 6vw;
+    /* Position from the right */
+    animation: fadeIn 3s;
+}
+.header-contents h2 {
+    font-weight: 500;
+    color: #008080;
+    /* Teal */
+    font-size: max(4.5vw, 22px);
+    align-self: flex-end;
+    /* Align self to the right */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-contents p {
+    color: #96eeee;
+    /* Teal */
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-contents button {
+    align-items: center;
+    appearance: none;
+    background-color: #008080;
+    /* Teal */
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    /* White */
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform, opacity;
+    z-index: 0;
+}
+/* Button Hover State */
+.header-contents button:hover {
+    background: #004D4D;
+    /* Darker Teal */
+    color: #FFFFFF;
+    /* White */
+}
+
+/* Button Active State */
+.header-contents button:active {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3), 0 8px 12px 6px rgba(0, 0, 0, .2);
+    outline: none;
+}
+
+/* Button Focus State */
+.header-contents button:focus {
+    outline: none;
+    border: 2px solid #004D4D;
+    /* Darker Teal */
+}
+
+/* Disabled Button State */
+.header-contents button:disabled {
+    background: rgba(0, 0, 0, .1);
+    color: rgba(0, 0, 0, .5);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+/* Button Box Shadows */
+.header-contents button:not(:disabled) {
+    box-shadow: rgba(0, 0, 0, .3) 0 1px 3px 0, rgba(0, 0, 0, .15) 0 4px 8px 3px;
+}
+
+.header-contents button:not(:disabled):hover {
+    box-shadow: rgba(0, 0, 0, .3) 0 2px 3px 0, rgba(0, 0, 0, .15) 0 6px 10px 4px;
+}
+
+.header-contents button:not(:disabled):focus {
+    box-shadow: rgba(0, 0, 0, .3) 0 1px 3px 0, rgba(0, 0, 0, .15) 0 4px 8px 3px;
+}
+
+.header-contents button:not(:disabled):active {
+    box-shadow: rgba(0, 0, 0, .3) 0 4px 4px 0, rgba(0, 0, 0, .15) 0 8px 12px 6px;
+}
+@media (max-width: 768px) {
+    .header-contents {
+        max-width: 90%;
+        /* Increase max-width for smaller screens */
+        right: 3vw;
+        /* Adjust position on smaller screens */
+        gap: 1vw;
+    }
+
+    .header-contents h2 {
+        font-size: clamp(18px, 5vw, 40px);
+        /* Further adjust font size for smaller screens */
+    }
+
+    .header-contents p {
+        font-size: clamp(10px, 1.5vw, 16px);
+        /* Further adjust font size for smaller screens */
+    }
+}

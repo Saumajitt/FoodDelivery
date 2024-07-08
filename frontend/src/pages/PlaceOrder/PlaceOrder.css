@@ -1,0 +1,85 @@
+.place-order {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 100px 0px;
+}
+
+.place-order-left {
+    width: 100%;
+    max-width: max(30%, 500px);
+}
+
+.place-order-left .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.place-order-left input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    /* Black */
+    border-radius: 4px;
+    outline-color: #004d4d;
+    /* Teal */
+}
+
+.place-order-left .multi-field {
+    display: flex;
+    gap: 10px;
+}
+
+.place-order-right {
+    width: 100%;
+    max-width: max(40%, 500px);
+}
+
+.place-order-submit {
+    margin-top: 50px;
+    border: none;
+    background-color: #004d4d;
+    /* Teal */
+    color: white;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+.payment h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.payment .payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #004d4d;
+    /* Teal */
+    padding: 15px;
+    border-radius: 4px;
+    min-width: 300px;
+    cursor: pointer;
+}
+
+.payment .payment-option:hover {
+    background-color: #003737;
+    /* Darker teal */
+}
+
+@media (max-width:700px) {
+    .place-order {
+        flex-direction: column;
+    }
+}

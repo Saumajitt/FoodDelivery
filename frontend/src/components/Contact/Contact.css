@@ -1,0 +1,77 @@
+/* Contact.css */
+
+.contact-page {
+  background-color: white!important; /* Grey background for the entire contact page */
+}
+
+.contact-form-container {
+  background-color: teal; /* Teal background for the form container */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  color: white; /* White text color for the heading */
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white; /* White text color for labels */
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white; /* Teal background color for inputs and textarea */
+  color: black; /* White text color for inputs and textarea */
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.8); /* Orange shadow on focus */
+}
+
+.submit-button {
+  background-color: rgb(2, 142, 142);
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #ffa500; /* Orange background on hover */
+  color: white; /* White text color on hover */
+}
+
+/* Styling for the empty space around the form */
+.contact-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:white; /* Grey background for the empty space */
+  z-index: -1; /* Place behind other content */
+}

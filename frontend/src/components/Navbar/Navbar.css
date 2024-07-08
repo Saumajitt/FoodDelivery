@@ -1,0 +1,244 @@
+/* General Navbar Styles */
+.navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292828;
+    color: #FFFFFF;
+}
+
+.navbar .logo {
+    width: 150px;
+    max-width: 100%;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-menu a {
+    color: #CCCCCC;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar-menu a:hover,
+.navbar-menu .active {
+    color: #00C2C2;
+    border-bottom: 2px solid #00C2C2;
+}
+
+.navbar-right {
+    display: flex;
+    align-items:center;
+    gap: 20px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    background-color: #444444;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-form input {
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 150px;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.search-form input::placeholder {
+    color: #CCCCCC;
+}
+
+.search-form button {
+    padding: 5px 15px;
+    border: none;
+    background-color: #00C2C2;
+    color: #FFFFFF;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #009393;
+}
+
+.navbar-search-icon {
+    position:relative;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: teal;
+    color: #FFFFFF;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.navbar-right button {
+    background: #00C2C2;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navbar-right button:hover {
+    background: #009393;
+}
+
+.navbar-profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar-profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.navbar-profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: 100%;
+    background-color: #FFFFFF;
+    color: #292828;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.navbar-profile-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navbar-profile-dropdown li:hover {
+    background-color: #F1F1F1;
+}
+
+.navbar-profile:hover .navbar-profile-dropdown {
+    display: block;
+}
+
+.navbar-profile hr {
+    margin: 5px 0;
+    border: 0;
+    border-top: 1px solid #DDDDDD;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 15px;
+    }
+
+    .search-form input {
+        width: 130px;
+    }
+
+    .search-form button {
+        padding: 5px 10px;
+        margin-left: 5px;
+    }
+
+    .navbar-right button {
+        padding: 8px 18px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 120px;
+    }
+
+    .navbar-menu {
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .navbar-right {
+        gap: 10px;
+    }
+
+    .search-form input {
+        width: 100px;
+    }
+
+    .search-form button {
+        padding: 5px 10px;
+        margin-left: 5px;
+    }
+
+    .navbar-right button {
+        padding: 6px 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-right {
+        gap: 5px;
+    }
+
+    .search-form input {
+        width: 80px;
+    }
+
+    .search-form button {
+        padding: 5px 8px;
+        margin-left: 5px;
+    }
+
+    .navbar-right button {
+        padding: 5px 10px;
+    }
+}
