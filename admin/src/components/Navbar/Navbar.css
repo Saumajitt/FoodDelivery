@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+    background-color: #292828;
+    /* Dark teal background */
+}
+
+.navbar .logo {
+    width: max(10%, 80px);
+}
+
+.navbar .profile {
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #008080;
+    /* Teal border */
+}
