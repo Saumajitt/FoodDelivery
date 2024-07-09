@@ -4,9 +4,10 @@ import { assets } from '../../assets/assets';
 import { Link, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../Context/StoreContext';
 
+
 const AppNavbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
-  const { getTotalCartAmount, token, setToken } = useContext(StoreContext);
+  const { getUniqueItemsCount, token, setToken } = useContext(StoreContext);
   const navigate = useNavigate();
 
   const logout = () => {
@@ -39,7 +40,7 @@ const AppNavbar = ({ setShowLogin }) => {
         </form>
         <Link to='/cart' className='navbar-search-icon'>
           <img src={assets.basket_icon} alt="Cart" />
-          {getTotalCartAmount() > 0 && <div className="badge">{getTotalCartAmount()}</div>}
+          {getUniqueItemsCount() > 0 && <div className="badge">{getUniqueItemsCount()}</div>}
         </Link>
         {!token ? (
           <button onClick={() => setShowLogin(true)}>Sign In</button>

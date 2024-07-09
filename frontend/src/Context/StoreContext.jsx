@@ -57,6 +57,11 @@ const StoreContextProvider = (props) => {
         setCartItems(response.data.cartData);
     }
 
+    const getUniqueItemsCount = () => {
+        return Object.keys(cartItems).length;
+    };
+
+
     useEffect(() => {
         async function loadData() {
             await fetchFoodList();
@@ -76,6 +81,7 @@ const StoreContextProvider = (props) => {
         addToCart,
         removeFromCart,
         getTotalCartAmount,
+        getUniqueItemsCount,
         token,
         setToken,
         loadCartData,
