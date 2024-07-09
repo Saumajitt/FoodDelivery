@@ -29,7 +29,7 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-    background-color: #004d4d;
+    background-color: #0e6f6f;
     /* Teal */
     padding: 10px;
     border-radius: 5px;
@@ -59,7 +59,7 @@
     padding: 10px;
     border-radius: 4px;
     color: white;
-    background-color: #008080;
+    background-color: #048d8d;
     /* Teal button */
     font-size: 15px;
     cursor: pointer;
@@ -84,7 +84,7 @@
 }
 
 .login-popup p span {
-    color: #FF4C24;
+    color: rgb(4, 139, 139);
     font-weight: 500;
     cursor: pointer;
 }

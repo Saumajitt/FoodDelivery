@@ -7,8 +7,8 @@ import Cart from './pages/Cart/Cart'
 import LoginPopup from './components/LoginPopup/LoginPopup'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import MyOrders from './pages/MyOrders/MyOrders'
-import Contact from './components/Contact/Contact'
-import About from './components/About/About'
+import Contact from './pages/Contact/Contact'
+import About from './pages/About/About'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Verify from './pages/Verify/Verify'
